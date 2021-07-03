@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<title> sign up form</title>
+<style>
+  body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: pink;
+    font-size: large;
+  } 
+button{
+  background-color: lightgreen;
+  width: 100%;
+  color: black;
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+form{
+  border: 3px solid lightgreen;
+
+}
+input[type=text],input[type=password]{
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid lavender;
+  box-sizing: border-box;
+}
+button:hover{
+  background-color: royalblue;
+}
+.cancelbtn{
+  width: auto;
+  padding: 10px 18px;
+  margin: 10px 5px;
+} 
+.container{
+  padding: 25px;
+  background-color: lightblue;
+}
+.error{
+  color: red;
+  font-size: 90%;
+}
+span{
+  color: red;
+}
+
+</style>
+</head>
+<body>
+  <center><h1>SIGN UP</h1></center>
+  <form name="Form" action="index.html"  onsubmit="return (validateForm());">
+    
+    <div class="container">
+
+      <div class="box">
+      <label> USERNAME : </label>
+      <input type="text" placeholder="enter user username" name="name" id="user"> 
+      <span id="username" ></span>
+      
+      </div>
+
+      <div class="box">
+      <label> EMAIL: </label>
+      <input type="text" placeholder="enter your email address" name="email" id="email" >
+      <span id="emails"></span>
+      
+      
+      </div>
+
+      <div class="box">
+      <label> MOBILE :</label>
+      <input type="text" placeholder="enter your phone number" name="mobile" id="mobile" maxlength="10">
+      <span id="mobiles"></span>
+      
+      
+      </div>
+
+      <div class="box">
+      <label> PASSWORD :</label>
+      <input  type="password" placeholder="enter your password" name="password" id="pwd" >
+      <span id="pwds"></span>
+       </div>
+
+       <div class="box">  
+      <button type="onsubmit" value="submit">SUBMIT</button>
+       </div>
+
+      <input type="checkbox" checked="checked"> Remember me
+      <button type="button" class="cancelbtn">CANCEL</button>
+      Forgot <a href="#">password?</a>
+
+
+    </div>
+  </form>
+  <script src="sign up.js"></script>
+</body>
+</html>
